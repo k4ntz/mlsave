@@ -1,3 +1,4 @@
+from shutil import rmtree
 from utils import increm
 
 
@@ -10,3 +11,5 @@ def test_increm_numbered():
 def test_increm_not_numbered():
     assert increm("abc.txt") == "abc2.txt"
     assert increm("34cou12cou.txt") == "34cou12cou2.txt"
+
+def test_path():
